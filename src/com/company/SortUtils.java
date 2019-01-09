@@ -11,14 +11,17 @@ public class SortUtils {
         }
         return min;
     }
-    public static boolean checkSum(int[] testArr){
-        for (int i = 0; i<testArr.length;i++){
-            if(testArr[i]+testArr[i-1]!=){
-
+    public static void checkSum(int[] testArr) {
+       int[] sum1 = new int[testArr.length];
+       int [] sum2 = testArr;
+            for (int i = 0; i < testArr.length; i++) {
+                if (sum2 == sum1) {
+                continue;
+                }
             }
-        }
     }
 
 
 }
+
 
