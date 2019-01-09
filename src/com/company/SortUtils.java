@@ -2,6 +2,25 @@ package com.company;
 
 public class SortUtils {
     int[] testArr = {8,6,7,5,3,0,9,10,1,2,3};
+    static boolean swap = true;
+    public static int selectionSort(int[] testArr){
+        int minInd = testArr[0];
+        for (int i = testArr[0]; i <testArr.length; i++)
+        {
+            if (testArr[i] < testArr[minInd])
+            {
+                swap(testArr,i,minInd);
+                minInd = i;
+            }
+        }
+        return minInd;
+
+    }
+
+    private static void swap(int[] testArr, int i, int minInd) {
+    }
+
+
     public static int isSorted(int[] testArr) {
         int min = testArr[0];
         for (int i = 0; i < testArr.length; i++) {
@@ -20,8 +39,7 @@ public class SortUtils {
                 }
             }
     }
-
-
 }
+
 
 
