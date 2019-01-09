@@ -13,9 +13,10 @@ public class BubbleSortRunner
         SortUtils.isSorted(testArr);
         BubbleSort.bubbleSort(testArr);
         SortUtils.checkSum(testArr);
+
         System.out.print("After: ");
         for (int num:testArr)
             System.out.print(num+" ");
         System.out.println();
     }
-}
+
