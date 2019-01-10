@@ -1,22 +1,20 @@
 package com.company;
 
-public class BubbleSortRunner
-{
-    public static void main(String[] args)
-    {
-        int[] testArr = {8,6,7,5,3,0,9,10,1,2,3};
-
+public class BubbleSortRunner {
+    public static void main(String[] args) {
+        int[] testArr = {8, 6, 7, 5, 3, 0, 9, 10, 1, 2, 3};
+        int[] arr = {1,2,3,5,4};
         System.out.print("Before: ");
-        for (int num:testArr)
-            System.out.print(num+" ");
+        for (int num : testArr)
+            System.out.print(num + " ");
         System.out.println();
         SortUtils.isSorted(testArr);
         BubbleSort.bubbleSort(testArr);
         SortUtils.checkSum(testArr);
-
+        SelectionSort.insertionSort(arr);
         System.out.print("After: ");
-        for (int num:testArr)
-            System.out.print(num+" ");
+        for (int num : testArr)
+            System.out.print(num + " ");
         System.out.println();
     }
-
+}
